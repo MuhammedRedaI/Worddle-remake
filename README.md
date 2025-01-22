@@ -1,6 +1,7 @@
 # Word Masters Game
 
 **Word Masters** is a fun and interactive word guessing game inspired by the classic word-guessing puzzle. The goal of the game is to guess a 5-letter word in as few tries as possible.
+This project is part of my **Front-End Developer Beginner Path**, where I aim to build web applications by exploring existing apps, studying their features, and practicing through self-directed learning. It is a work in progress, and while the game functions, it's not perfect as I continue to improve and learn.
 
 ### Features
 
