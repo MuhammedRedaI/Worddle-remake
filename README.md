@@ -5,7 +5,7 @@
 ### Features
 
 - **Word Guessing:** Players have 6 attempts to guess the correct word.
-- **Word Validation:** Each guess is validated by making a request to a backend API to check if it's a valid word.
+- **Word Validation:** Each guess is validated by making a POST request to an API that checks if the word exists in the English dictionary.
 - **Color-Coding:** 
   - Green: Correct letter in the correct position.
   - Yellow: Correct letter but in the wrong position.
@@ -18,7 +18,15 @@
 - **HTML:** Structure of the game interface.
 - **CSS:** Styling and animations.
 - **JavaScript:** Core game logic and handling of user interactions.
-- **Fetch API:** To get a random word of the day and validate guesses.
+- **Fetch API:** 
+  - Fetches a random word of the day from an API.
+  - Makes a POST request to validate the guessed word in the English dictionary.
+
+### Word Validation API
+
+- The game uses a **POST API** to validate if the guessed word exists in the English dictionary.
+- The API endpoint for word validation is:
+- The guess is sent as part of the request body, and the API responds with a validation result.
 
 ### How to Play
 
@@ -26,9 +34,9 @@
 2. Start typing a 5-letter word in the first row.
 3. Press **Enter** to submit your guess.
 4. After each guess, feedback will be provided in the form of colors:
-   - Green: Correct letter in the correct position.
-   - Yellow: Correct letter but in the wrong position.
-   - Gray: Incorrect letter.
+ - Green: Correct letter in the correct position.
+ - Yellow: Correct letter but in the wrong position.
+ - Gray: Incorrect letter.
 5. If you guess the correct word, the background color will turn green, and a success message will appear.
 
 ### Future Improvements
@@ -42,13 +50,11 @@
 To run the game locally:
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/word-masters.git
-    ```
+  ```bash
+  git clone https://github.com/your-username/word-masters.git
+  ```
 2. Navigate to the project folder:
-    ```bash
-    cd word-masters
-    ```
+  ```bash
+  cd word-masters
+  ```
 3. Open `index.html` in your browser to start playing.
-
-
